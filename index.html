@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+    <div class="ente-1">
+        <h1>Emisor</h1>
+        <select onchange="cambiarEnte(this.value,'Emisor')" name="" id="selectEnte1">
+            <option value="publico">Teléfono Publico</option>
+            <option value="oficina">Teléfono Oficina</option>
+            <option value="casa">Teléfono Casa</option>
+            <option value="celular">Celular</option>
+        </select>
+        <div id="botonesEmisor" class="acciones"> 
+        </div>
+        <textarea name="" id="mensajeEmisor" cols="30" rows="10"></textarea>
+    </div>
+    <div class="ente-2">
+        <h1>Receptor</h1>
+        <select onchange="cambiarEnte(this.value,'Receptor')" name="" id="selectEnte2">
+            <option value="publico">Teléfono Publico</option>
+            <option value="oficina">Teléfono Oficina</option>
+            <option value="casa">Teléfono Casa</option>
+            <option value="celular">Celular</option>
+        </select>
+        <div id="botonesReceptor" class="acciones">
+        </div>
+        <textarea name="" id="mensajeReceptor" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="consola-1">
+        <textarea name="" id="consolaEmisor" readonly></textarea>
+    </div>
+
+    <div class="consola-2">
+        <textarea name="" id="consolaReceptor" readonly></textarea>
+    </div>
+    
+    <script src="./src/js/jquery.min.js"></script>
+    <script src="./src/js/automata.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
